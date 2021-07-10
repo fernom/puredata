@@ -1,0 +1,26 @@
+#N canvas 1494 263 735 666 12;
+#X obj 199 150 line~;
+#X obj 184 184 *~;
+#X obj 174 213 dac~;
+#X obj 139 131 *~ 0.2;
+#X msg 199 127 1 \, 0 \$1;
+#X obj 199 106 f;
+#X obj 224 76 nbx 4 14 10 1000 1 1 empty empty empty 0 -8 0 10 -262144
+-1 -1 756.236 256;
+#X text 273 76 ms;
+#X msg 199 47 bang;
+#X obj 44 78 else/freq.shift~ 7;
+#X obj 45 29 osc~ 43;
+#X text 69 283 diy-envelope-tutorial.pd - https://forum.pdpatchrepo.info/topic/5315/line-line-vline-and-adsr-envelopes
+figure 5 - https://www.soundonsound.com/techniques/synthesizing-drums-bass-drum
+freq.shift~ - https://github.com/porres/pd-else, f 84;
+#X connect 0 0 1 1;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 1 0;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 1;
+#X connect 8 0 5 0;
+#X connect 9 0 3 0;
+#X connect 10 0 9 0;
