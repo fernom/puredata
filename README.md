@@ -1,2 +1,4 @@
 # puredata
-Pure Data patches, em edição.
+Pure Data patches
+
+- 
